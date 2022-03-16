@@ -8,8 +8,8 @@ MAGENTABG="$(printf '\033[45m')"  CYANBG="$(printf '\033[46m')"  WHITEBG="$(prin
 RESETBG="$(printf '\e[0m\n')" YELLOW="$(printf '\033[1;33m')" GRAY="$(printf '\033[1;30m')"
 
 Need() {
-	command -v wget > /dev/null 2>&1 || { echo >&2 "${RED}I require wget but it's not installed. Waiting few seconds .." ; sudo apt install wget; }
-	command -v figlet toilet > /dev/null 2>&1 || { echo >&2 "${RED}I require figlet toilet but it's not installed. Waiting few seconds .." ; sudo apt install figlet toilet ; }
+	command -v wget > /dev/null 2>&1 || { echo >&2 "${RED}I require wget but it's not installed. Waiting few seconds .." ; sudo apt install wget -y > /dev/null 2>&1 ; }
+	command -v figlet toilet > /dev/null 2>&1 || { echo >&2 "${RED}I require figlet toilet but it's not installed. Waiting few seconds .." ; sudo apt install figlet toilet -y > /dev/null 2>&1; }
 }
 
 Menu() {
