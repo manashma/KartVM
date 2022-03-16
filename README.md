@@ -27,6 +27,6 @@ apt-get install git -y
 git clone https://github.com/manashma/KartVM.git
 cd KartVM
 chmod 777 KartVM
-./KartVM
+./KartVM.sh
 ```
 ### Contact Me : beastbattle24@gmail.com
