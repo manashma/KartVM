@@ -18,6 +18,8 @@
 ###### 14.Disable Network
 
 ##### Wait for Next Update
+#### Screenshot
+![github-small](/image/Screenshot1.jpg)
 --------------------------------------------------------------------------------
 ### How to Install ?
 ```
