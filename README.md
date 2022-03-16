@@ -14,11 +14,11 @@
 ###### 10.Disable Antivirus
 ###### 11.CrashPC (Delete System files)
 ###### 12.Ransomware (WannaCry)
-######13.Alart Loop
+###### 13.Alart Loop
 ###### 14.Disable Network
 
 ##### Wait for Next Update
-
+--------------------------------------------------------------------------------
 ### How to Install ?
 ```
 apt-get install git -y
